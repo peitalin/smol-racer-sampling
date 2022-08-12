@@ -74,6 +74,8 @@ def draw3Winners():
                 printWinningSlot(winningDraw, slot)
                 alreadySampled = isSlotAlreadySampled(slot, winningSlots)
                 print("alreadySampled {}".format(alreadySampled))
+                ## If already sampled, just increment slot until
+                ## you find the next slot that hasn't already won.
                 winningSlots.append(slot)
                 break
 
